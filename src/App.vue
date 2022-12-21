@@ -1,10 +1,13 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+        <nav class="navbar navbar-light bg-light">
+            <form class="form-inline mx-auto">
+                <button class="btn btn-outline-success me-5" type="button"><router-link to="/">Products</router-link></button>
+                <button class="btn btn-outline-secondary" type="button"><router-link to="/admin">Admin</router-link></button>
+            </form>
+        </nav>
+    <router-view />
 </template>
+
 
 <style>
 #app {
